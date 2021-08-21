@@ -27,10 +27,10 @@ public class Problem_4 {
         double median=0.0;
         int[] merged_array = merge(nums1, nums2);
         System.out.println(Arrays.toString(merged_array));
-        median = return_median_value(merged_array);
+        median = find_value(merged_array);
         return (double)Math.round(median * 100000d) / 100000d;
     }
-    static double return_median_value(int[] arr){
+    static double find_value(int[] arr){
         int start = 0;
         int end = arr.length - 1;
         // check if the arr is in ascending order or descending order :
